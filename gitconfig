@@ -1,0 +1,33 @@
+[user]
+	name = Bassem Shaker
+	email = bshakr@gmail.com
+[alias]
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  up = pull --rebase
+  punch = blame
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+  excludesfile = ~/.gitignore
+  editor = vim --noplugin
+[apply]
+  whitespace = nowarn
+[merge]
+  tool = kdiff3
+[difftool]
+  prompt = false
+[push]
+  default = current
+[credential]
+  helper = osxkeychain
+[filter "media"]
+	required = true
+	clean = git media clean %f
+  smudge = git media smudge %f
+
+[github]
+  user = bshakr
+
+
