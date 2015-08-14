@@ -12,6 +12,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'         " Supercharge vim’s dot command.
 Plugin 'thoughtbot/vim-rspec'     " Run rspec from within vim.
 Plugin 'tpope/vim-dispatch'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
 
