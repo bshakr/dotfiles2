@@ -14,6 +14,7 @@ Plugin 'thoughtbot/vim-rspec'     " Run rspec from within vim.
 Plugin 'tpope/vim-dispatch'
 Plugin 'airblade/vim-gitgutter'
 
+Plugin 'nelstrom/vim-textobj-rubyblock' " Ruby block text object
 call vundle#end()
 
 " let g:ackprg = 'ag --vimgrep'
