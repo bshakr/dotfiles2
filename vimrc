@@ -30,6 +30,7 @@ set hidden                        " Handle multiple buffers better.
 
 set ignorecase                    " Case-insensitive searching.
 set smartcase                     " But case-sensitive if expression contains uppercase letters.
+set smarttab
 
 set number                        " Show line numbers.
 set ruler                         " Show cursor position.
@@ -41,7 +42,6 @@ set wrap                          " Turn on line wrapping.
 set scrolloff=3                   " Show 3 lines of context around the cursor.
 
 set title                         " Set the terminal’s title.
-
 
 set visualbell                    " No beeping.
 
