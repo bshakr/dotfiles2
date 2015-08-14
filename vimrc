@@ -56,3 +56,6 @@ set expandtab                     " Use spaces instead of tabs.
 set laststatus=2                  " Show the status line all the time.
 highlight StatusLine ctermfg=blue ctermbg=yellow  " Highlight the status line
 
+set cursorline
+hi CursorLine   cterm=NONE ctermbg=Black guibg=Black guifg=white
+nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
