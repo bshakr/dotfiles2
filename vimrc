@@ -59,8 +59,7 @@ set laststatus=2                  " Show the status line all the time.
 highlight StatusLine ctermfg=blue ctermbg=yellow  " Highlight the status line
 
 set cursorline
-hi CursorLine   cterm=NONE ctermbg=Black guibg=Black guifg=white
-nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+highlight CursorLine cterm=NONE ctermbg=Black 
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
@@ -69,3 +68,4 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 let g:rspec_command = "Dispatch bin/rspec {spec}" " Use tpope/dispatch to run thoughtbot/vim-rspec
+:nnoremap H :set cursorline!<CR>
