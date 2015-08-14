@@ -67,5 +67,7 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
+nmap <Leader>bi :source ~/.vimrc<cr>:PluginInstall<cr>
+
 let g:rspec_command = "Dispatch bin/rspec {spec}" " Use tpope/dispatch to run thoughtbot/vim-rspec
 :nnoremap H :set cursorline!<CR>
