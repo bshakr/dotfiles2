@@ -1,7 +1,7 @@
 let mapleader = "\<Space>"        " Set leader to space.
 
 set nocompatible                  " Must come first because it changes other options.
-filetype off                  " Required by vundle.
+filetype off                      " Required by vundle.
 
 set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and initialize.
 call vundle#begin()               
