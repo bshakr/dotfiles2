@@ -4,7 +4,7 @@ set nocompatible                  " Must come first because it changes other opt
 filetype off                      " Required by vundle.
 
 set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and initialize.
-call vundle#begin()               
+call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'        " Let vundle manage vundle.
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -13,9 +13,13 @@ Plugin 'tpope/vim-repeat'         " Supercharge vim’s dot command.
 Plugin 'thoughtbot/vim-rspec'     " Run rspec from within vim.
 Plugin 'tpope/vim-dispatch'
 Plugin 'airblade/vim-gitgutter'
-
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tmhedberg/matchit'
+Plugin 'kana/vim-textobj-user'          " Ruby block text object dependency
 Plugin 'nelstrom/vim-textobj-rubyblock' " Ruby block text object
+Plugin 'tpope/vim-rails'
 Plugin 'rking/ag.vim'                   " Search using ag
+
 call vundle#end()
 
 " let g:ackprg = 'ag --vimgrep'
