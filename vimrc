@@ -15,6 +15,7 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'airblade/vim-gitgutter'
 
 Plugin 'nelstrom/vim-textobj-rubyblock' " Ruby block text object
+Plugin 'rking/ag.vim'                   " Search using ag
 call vundle#end()
 
 " let g:ackprg = 'ag --vimgrep'
