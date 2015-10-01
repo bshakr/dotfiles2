@@ -19,6 +19,7 @@ Plugin 'kana/vim-textobj-user'          " Ruby block text object dependency
 Plugin 'nelstrom/vim-textobj-rubyblock' " Ruby block text object
 Plugin 'tpope/vim-rails'
 Plugin 'rking/ag.vim'                   " Search using ag
+Plugin 'tpope/vim-endwise'
 
 call vundle#end()
 
@@ -61,7 +62,10 @@ set tabstop=2                     " Global tab width.
 set shiftwidth=2                  " And again, related.
 set expandtab                     " Use spaces instead of tabs.
 
+set pastetoggle=<Leader>pt
+
 set laststatus=2                  " Show the status line all the time.
+set relativenumber
 highlight StatusLine ctermfg=blue ctermbg=yellow  " Highlight the status line.
 
 set cursorline
@@ -77,3 +81,7 @@ nmap <Leader>bi :source ~/.vimrc<cr>:PluginInstall<cr>
 
 let g:rspec_command = "Dispatch bin/rspec {spec}" " Use tpope/dispatch to run thoughtbot/vim-rspec
 :nnoremap H :set cursorline!<CR>
+
+" Remove trailing whitespace on save for ruby files.
+au BufWritePre *.rb,*.scss,*.coffee,*.haml :%s/\s\+$//e
+
