@@ -38,7 +38,9 @@ set showmode                      " Display the mode you’re in.
 
 set backspace=indent,eol,start    " Intuitive backspacing.
 
-set clipboard=unnamed             " Tell vim to use system clipboard
+if $TMUX == ''
+  set clipboard+=unnamed             " Tell vim to use system clipboard
+endif
 
 set hidden                        " Handle multiple buffers better.
 
