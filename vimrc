@@ -23,12 +23,17 @@ Plugin 'tpope/vim-endwise'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'gcmt/taboo.vim'
 Plugin 'mxw/vim-jsx'
+Plugin 'scrooloose/nerdtree'
+Plugin 'mattn/emmet-vim'
+Plugin 'posva/vim-vue'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 
 " let g:ackprg = 'ag --vimgrep'
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrp_use_caching = 0        " Disable ctrp file listing cache.
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
@@ -84,6 +89,7 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
+imap § <Esc>
 nmap <Leader>bi :source ~/.vimrc<cr>:PluginInstall<cr>
 
 nmap <Leader>- :nohlsearch<CR>
@@ -93,4 +99,9 @@ let g:rspec_command = "Dispatch bin/rspec {spec}" " Use tpope/dispatch to run th
 
 " Remove trailing whitespace on save for ruby files.
 au BufWritePre *.rb,*.scss,*.coffee,*.haml :%s/\s\+$//e
+
+let g:jsx_ext_required = 0
+
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
 
