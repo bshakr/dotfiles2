@@ -102,6 +102,6 @@ au BufWritePre *.rb,*.scss,*.coffee,*.haml :%s/\s\+$//e
 
 let g:jsx_ext_required = 0
 
-autocmd VimEnter * NERDTree
+autocmd VimEnter * if &filetype !=# 'gitcommit' | NERDTree | endif
 autocmd VimEnter * wincmd p
 
