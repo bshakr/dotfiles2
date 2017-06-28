@@ -33,7 +33,7 @@ call vundle#end()
 " let g:ackprg = 'ag --vimgrep'
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrp_use_caching = 0        " Disable ctrp file listing cache.
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_custom_ignore = '\v[\/](__generated__|node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
