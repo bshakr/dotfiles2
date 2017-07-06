@@ -108,6 +108,7 @@ autocmd VimEnter * wincmd p
 
 " Prettier config
 let g:prettier#config#semi = 'false'
+let g:prettier#config#bracket_spacing = 'true'
 
 " Run Prettier before saving
 let g:prettier#autoformat = 0
