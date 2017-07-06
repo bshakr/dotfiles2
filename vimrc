@@ -28,6 +28,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'posva/vim-vue'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mitermayer/vim-prettier'
+Plugin 'jparise/vim-graphql'
 
 call vundle#end()
 
