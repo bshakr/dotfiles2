@@ -27,6 +27,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
 Plugin 'posva/vim-vue'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mitermayer/vim-prettier'
 
 call vundle#end()
 
@@ -105,3 +106,9 @@ let g:jsx_ext_required = 0
 autocmd VimEnter * if &filetype !=# 'gitcommit' | NERDTree | endif
 autocmd VimEnter * wincmd p
 
+" Prettier config
+let g:prettier#config#semi = 'false'
+
+" Run Prettier before saving
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.json,*.css,*.scss,*.less,*.graphql PrettierAsync
