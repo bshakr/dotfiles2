@@ -29,6 +29,7 @@ Plugin 'posva/vim-vue'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mitermayer/vim-prettier'
 Plugin 'jparise/vim-graphql'
+Plugin 'leafgarland/typescript-vim'
 
 call vundle#end()
 
@@ -110,7 +111,8 @@ autocmd VimEnter * wincmd p
 " Prettier config
 let g:prettier#config#semi = 'false'
 let g:prettier#config#bracket_spacing = 'true'
+let g:prettier#config#parser = 'babylon'
 
 " Run Prettier before saving
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.json,*.css,*.scss,*.less,*.graphql PrettierAsync
+" let g:prettier#autoformat = 0
+" autocmd BufWritePre *.js,*.json,*.css,*.scss,*.less,*.graphql PrettierAsync
